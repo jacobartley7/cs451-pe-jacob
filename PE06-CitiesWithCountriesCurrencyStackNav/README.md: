@@ -1,0 +1,17 @@
+# Input  
+The program allows the user to enter information about cities (name and country) and countries (name and currency). Inputs are given through text fields and submitted via buttons in the AddCity and AddCountry screens. This approach follows the common React Native pattern of using controlled components to capture user input (Dabit, 2019).  
+
+# Process  
+When the user submits a form, the program updates the application state in *App.js*. New cities are stored with empty locations, and new countries are stored with empty currency lists. The stack and tab navigators, implemented with the React Navigation library, manage navigation between Cities/Countries lists and detail screens (React Navigation, n.d.). State management ensures that each added city or country is passed down as props to child components, maintaining a unidirectional data flow (Dabit, 2019).  
+
+# Output  
+The program displays two main lists: Cities and Countries. Each entry can be tapped to show its details (locations for a city, currencies for a country). If no data exists, a placeholder message is shown. The result is a tab-based mobile application with two navigation stacks and two forms for interaction, enabling a clear input-process-output cycle (React Navigation, n.d.; Dabit, 2019).  
+
+---
+
+## References  
+Dabit, N. (2019). *React Native in action*. Manning Publications.  
+
+React Navigation. (n.d.). *React Navigation documentation*. Retrieved August 29, 2025, from [https://reactnavigation.org](https://reactnavigation.org)  
+
+
